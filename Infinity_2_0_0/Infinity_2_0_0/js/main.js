@@ -266,7 +266,7 @@
             let title = folio.querySelector('.folio-item__title');
             let caption = folio.querySelector('.folio-item__caption');
             let titleText = '<h4>' + title.innerHTML + '</h4>';
-            let captionText = caption.innerHTML;
+            //let captionText = caption.innerHTML;
             let href = thumbLink.getAttribute('href');
             let size = thumbLink.dataset.size.split('x'); 
             let width  = size[0];

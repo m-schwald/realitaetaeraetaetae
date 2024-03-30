@@ -4373,3 +4373,85 @@ img.u-pull-left {
     align-items: center;
     margin-bottom: 1rem;
 }
+
+.folio-item__thumb:hover {
+    background: black;
+}
+
+.s-intro__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.s-intro__more-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.s-intro__more-btn svg {
+    transform: rotate(270deg) !important;
+}
+
+.s-intro__more-btn svg path {
+    fill: white;
+}
+
+.s-intro__more-btn:hover svg path {
+    fill: rgba(0, 0, 0, .8);
+}
+
+.anfahrt {
+    padding-top: 2rem;
+}
+
+.anfahrt h2 {
+    color: white;
+}
+
+.anfahrt__buttons {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.map-container .text-pretitle {
+    text-align: left;
+}
+
+.map-image {
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.map-link:hover {
+    .map-image {
+        transform: scale(1.02);
+    }
+}
+
+.map-address {
+    color: var(--color-gray-10);
+    text-align: left;
+}
+
+.map-address a.link {
+    color: var(--color-gray-15);
+}
+
+.map-address a.link:hover {
+    color: var(--color-1);
+}
