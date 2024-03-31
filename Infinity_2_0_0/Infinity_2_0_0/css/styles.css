@@ -4476,3 +4476,10 @@ img.u-pull-left {
 .folio-item__info {
     padding: 1rem;
 }
+
+#portfolio .s-portfolio__header {
+    background: url(../images/space.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
