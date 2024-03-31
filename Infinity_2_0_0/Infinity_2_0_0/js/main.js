@@ -299,10 +299,6 @@
                     index: i,
                     showHideOpacity: true
                 }
-
-                // initialize PhotoSwipe
-                let lightBox = new PhotoSwipe(pswp, PhotoSwipeUI_Default, items, options);
-                lightBox.init();
             });
 
         });

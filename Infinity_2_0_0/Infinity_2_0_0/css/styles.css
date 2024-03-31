@@ -4380,9 +4380,14 @@ img.u-pull-left {
 
 .s-intro__more {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+    }
 }
 
 .s-intro__more-btn {
@@ -4416,16 +4421,28 @@ img.u-pull-left {
 .anfahrt__buttons {
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+    }
 }
 
 .map-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    margin-bottom: 5rem;
+    
+    @media (min-width: 600px) {
+        gap: 5rem;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
 }
 
 .map-container .text-pretitle {
@@ -4454,4 +4471,8 @@ img.u-pull-left {
 
 .map-address a.link:hover {
     color: var(--color-1);
+}
+
+.folio-item__info {
+    padding: 1rem;
 }
