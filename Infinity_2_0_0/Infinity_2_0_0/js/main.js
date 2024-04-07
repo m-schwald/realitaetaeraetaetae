@@ -259,13 +259,14 @@
 
         if (!(pswp && folioItems)) return;
 
-        folioItems.forEach(function(folioItem) {
+        folioItems.forEach(function(folioItem, i) {
 
             let folio = folioItem;
             let thumbLink = folio.querySelector('.folio-item__thumb-link');
             let title = folio.querySelector('.folio-item__title');
             let caption = folio.querySelector('.folio-item__caption');
             let titleText = '<h4>' + title.innerHTML + '</h4>';
+            folio.dataset.index = i;
             //let captionText = caption.innerHTML;
             let href = thumbLink.getAttribute('href');
             let size = thumbLink.dataset.size.split('x'); 
