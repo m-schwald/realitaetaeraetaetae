@@ -262,12 +262,19 @@
         folioItems.forEach(function(folioItem, i) {
 
             let folio = folioItem;
+            let thumb = folio.querySelector('.folio-item__thumb');
             let thumbLink = folio.querySelector('.folio-item__thumb-link');
             let title = folio.querySelector('.folio-item__title');
-            let caption = folio.querySelector('.folio-item__caption');
+            let cat = folio.querySelector('.folio-item__cat');
             let titleText = '<h4>' + title.innerHTML + '</h4>';
             folio.dataset.index = i;
-            //let captionText = caption.innerHTML;
+
+            let catText = cat.innerHTML;
+            const catElement = document.createElement('div');
+            catElement.className = 'folio-item__thumb__cat';
+            catElement.innerHTML = catText;
+            thumb.appendChild(catElement);
+
             let href = thumbLink.getAttribute('href');
             let size = thumbLink.dataset.size.split('x'); 
             let width  = size[0];
@@ -279,8 +286,8 @@
                 h    : height
             }
 
-            if (caption) {
-                item.title = titleText.trim() + captionText.trim();
+            if (catElement) {
+                item.title = titleText.trim() + catText.trim();
             }
 
             items.push(item);
